@@ -11,7 +11,7 @@ export default function App() {
 
   const fetchedData = () => {
     //console.log('Am I working right')
-    const apiUrl = "https://randomuser.me/api/?results=10";
+    const apiUrl = "https://randomuser.me/api/?results=20";
     fetch(apiUrl)
       .then((res) => res.json())
       .then((data) => {
@@ -21,8 +21,8 @@ export default function App() {
   console.log(name);
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>Fetching data from an RandomUser Api</h1>
+      <h2>Showing list of profiles</h2>
       <UserComponent users={name} />
     </div>
   );
